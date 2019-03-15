@@ -1,14 +1,17 @@
 #pragma once
+#ifndef MyString_h
+#define MyString_h
+
 #include <cstring>
 #include <iomanip>
 #include <iostream>
 #include <ostream>
 // MyString class declaration goes here
-#ifndef MyString_h
-#define MyString_h
 
 //#include "MyString.cpp"
 // added const to passed variables to please compiler
+
+// stick const on everything
 
 class MyString
 {
@@ -30,7 +33,7 @@ public:
 
 };
 
-//ostream &operator << (ostream &out, const MyString &other);
+ostream & operator << (ostream &out, MyString &other);
 
 #endif // !MyString_h
 

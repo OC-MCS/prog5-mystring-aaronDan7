@@ -81,11 +81,13 @@ bool MyString::operator==(const MyString &other)
 }
 
 // outstream operator means easy display
-ostream& operator << (ostream &out, const MyString &other)
+// function is broken
+ostream & operator << (ostream &out, const MyString &other)
 	{
 	out << other.getc_str();
 	return out;
 	}
+
 
 // getter gets cstring
 char* MyString::getc_str() const

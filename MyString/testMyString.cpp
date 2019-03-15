@@ -6,6 +6,7 @@
 #include <iostream>
 #include <iomanip>
 #include <cstring>
+#include <ostream>
 #include "MyString.h"
 
 using namespace std;
@@ -19,6 +20,16 @@ int main()
 	s4 = s3 + s2; 
 
 	cout << s1 << endl << s2 << endl << s3 << endl << s4 << endl;
+	MyString testequal = "bobby";
+	cout << testequal;
+	MyString comp = "bobby";
+	
+	if (comp == testequal)
+	{
+		cout << "these are the same";
+	}
+
+
 
 
 	return 0;
